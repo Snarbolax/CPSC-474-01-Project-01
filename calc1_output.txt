@@ -1,0 +1,41 @@
+
+Assumptions
+===========
+1. The network is fully connected.
+2. A broadcast is a send event with more than two receive events.
+3. Each send event is followed by one or more receive events.
+4. A process has only one receive event associated with a send event executed at another process.
+5. There is no receive event without a send event that has happened at a different process earlier in the execution.
+6. There are 1 < n < 6 processes possible per matrix.
+7. There are less than 25 maximum events possible per process.
+8. There are at most 9 send events possible per matrix.
+===========
+
+Select input preference.
+	1. Read user input (via terminal)
+	2. File input
+	3. Exit program
+2
+
+Input the number of processes (i.e. rows): 3
+Enter the full name of a file to be analyzed (file must be in the same directory as executable) and hit enter: calc1.txt
+
+Input file "calc1.txt" opened succesfully
+
+
+Select the algorithm for the matrix to be used as an input for.
+	1. Calculate (Lamport LC Values)
+	2. Verify (Execution Correctness)
+	3. Exit program
+1
+
+Logical Clock (Value) Matrix
+============================
+
+p0   1 2 8 9 
+p1   1 6 7 0 
+p2   3 4 5 6 
+
+============================
+
+Exiting program ...
